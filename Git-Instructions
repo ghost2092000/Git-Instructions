@@ -1,0 +1,72 @@
+/////////////////////////////////////////////////////////////
+///                 Put on Github 
+/////////////////////////////////////////////////////////////
+    git init
+    git remote add origin https://github.com/TaylorLaMar/change-me-playground.git
+    git status 
+
+    git add .   // select All
+    // or
+    git add package** // everything that starts with package
+
+    * //make a .gitignore file $ inside the file put node_modules
+
+    git status
+    git commit -m "1st save"
+
+    git push -u origin master //only if its the first time
+    git push                  //if its not the first time 
+
+
+
+
+
+/////////////////////////////////////////////////////////////
+///                 Git Branch
+/////////////////////////////////////////////////////////////
+    git checkout -b Roberto
+    //Make a repository in github
+    git add. 
+    git commit -m "First Change"
+    git push origin dev
+
+
+
+
+/////////////////////////////////////////////////////////////
+///                  Merge Branches
+/////////////////////////////////////////////////////////////
+    git checkout master
+    git merge Roberto 
+    git push 
+
+    or 
+    git pull 
+    git push
+
+
+/////////////////////////////////////////////////////////////
+///   Clone a repository and Save to the same repository 
+/////////////////////////////////////////////////////////////
+
+
+//I made a folder called Git
+cd Git  // cd to Git folder
+git clone https://github.com/TaylorLaMar/change-me-playground.git
+
+git cd change-me-playground  //git into the change-me-playground folder
+git checkout -b Roberto // create a branch
+git remote add origin https://github.com/TaylorLaMar/change-me-playground.git
+
+git add .
+git commit -m "1st save"
+
+git add .
+git commit -m "2nd"
+
+git push origin Roberto
+git checkout master
+git merge Roberto 
+git push
+
+//Make sure you make your own branch inside github
